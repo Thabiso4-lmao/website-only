@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <h1>Tic-Tac-Toe</h1>
+      <p class="subtitle">Tap a cell to play — 3 in a row wins!</p>
+    </header>
+
+    <!-- Game Board -->
+    <section class="board-wrap">
+      <div id="board" class="board">
+        <button class="cell" data-index="0"></button>
+        <button class="cell" data-index="1"></button>
+        <button class="cell" data-index="2"></button>
+        <button class="cell" data-index="3"></button>
+        <button class="cell" data-index="4"></button>
+        <button class="cell" data-index="5"></button>
+        <button class="cell" data-index="6"></button>
+        <button class="cell" data-index="7"></button>
+        <button class="cell" data-index="8"></button>
+      </div>
+    </section>
+
+    <!-- Controls -->
+    <section class="controls">
+      <div class="status" id="status">Player X's turn</div>
+      <div class="score">
+        <div>🎯 X: <span id="scoreX">0</span></div>
+        <div>🎯 O: <span id="scoreO">0</span></div>
+        <div>🤝 Draws: <span id="scoreD">0</span></div>
+      </div>
+      <div class="buttons">
+        <button id="restartBtn" class="btn">Restart Round</button>
+        <button id="resetBtn" class="btn ghost">Reset Scores</button>
+      </div>
+    </section>
+
+    <footer class="credits">
+      <small>Tap the board to play — responsive and mobile-friendly.</small>
+    </footer>
+  </main>
+
+  <!-- Result Screen -->
+  <div id="resultScreen" class="result-screen hidden">
+    <div class="result-content">
+      <h2 id="resultMessage">Player X Wins!</h2>
+      <button id="newGameBtn" class="btn">New Game</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
